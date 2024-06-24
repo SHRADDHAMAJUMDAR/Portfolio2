@@ -1,0 +1,74 @@
+/* SkillContentStyles.css */
+
+.skills {
+  background: #0d0d0d;
+  padding: 60px 0;
+  color: #f8f8f8;
+}
+
+.skills .section-title {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.skills .section-title h2 {
+  font-size: 32px;
+  font-weight: 600;
+  color: #f8f8f8;
+}
+
+.skills .skills-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.skills .skills-content .col-lg-6 {
+  padding: 0 15px;
+  margin-bottom: 30px;
+}
+
+.skills .progress {
+  margin-bottom: 30px; /* Increased margin to spread out the progress bars */
+}
+
+.skills .progress .skill {
+  padding: 10px 0;
+  font-weight: 600;
+  font-size: 14px;
+  color: #f8f8f8;
+}
+
+.skills .progress .skill .val {
+  float: right;
+  font-style: normal;
+}
+
+.skills .progress .progress-bar-wrap {
+  background: #444444;
+  height: 8px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.skills .progress .progress-bar {
+  height: 8px;
+  background: #ff7f50;
+  border-radius: 20px;
+  transition: width 0.6s ease;
+}
+
+[data-aos="fade-up"] {
+  animation: fadeUp 0.6s ease-in-out both;
+}
+
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

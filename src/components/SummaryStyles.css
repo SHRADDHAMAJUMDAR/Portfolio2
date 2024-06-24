@@ -1,0 +1,106 @@
+/* SummaryStyles.css */
+
+.resume {
+  background: #2c2c2c;
+  padding: 60px 0;
+  color: #f8f8f8;
+}
+
+.resume .section-title {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.resume .section-title h2 {
+  font-size: 32px;
+  font-weight: 600;
+  color: #f8f8f8;
+}
+
+.resume .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.resume .col-lg-6 {
+  flex: 1 1 0; /* This is the key change */
+  padding: 0 15px;
+  margin-bottom: 30px;
+}
+
+
+.resume .resume-title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #ff7f50;
+}
+
+.resume .resume-item {
+  background: #444444;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+.resume .resume-item h4 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #f8f8f8;
+  margin-bottom: 10px;
+}
+
+.resume .resume-item h5 {
+  font-size: 16px;
+  color: #dddddd;
+  margin-bottom: 10px;
+}
+
+.resume .resume-item p {
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #f8f8f8;
+}
+
+.resume .resume-item ul {
+  list-style: none;
+  padding: 0;
+  color: #f8f8f8;
+}
+
+.resume .resume-item ul li {
+  padding-left: 1.2em;
+  text-indent: -1.2em;
+}
+
+.resume .resume-item ul li::before {
+  content: "\2022";
+  color: #ff7f50;
+  display: inline-block;
+  width: 1.2em;
+}
+
+.resume .resume-item a {
+  color: #ff7f50;
+  text-decoration: none;
+}
+
+.resume .resume-item a:hover {
+  color: #1e90ff;
+}
+
+[data-aos="fade-up"] {
+  animation: fadeUp 1s ease-in-out both;
+}
+
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
